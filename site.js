@@ -84,16 +84,16 @@ equalsButton.addEventListener('click', function() {
     inputArray.push(inputElement.value);
 
     if(plusIsActive) {
-        inputElement.value = parseInt(inputArray[0]) + parseInt(inputArray[1]);
+        inputElement.value = parseFloat(inputArray[0]) + parseFloat(inputArray[1]);
     }
     if(subtractIsActive) {
-        inputElement.value = parseInt(inputArray[0]) - parseInt(inputArray[1]);
+        inputElement.value = parseFloat(inputArray[0]) - parseFloat(inputArray[1]);
     }
     if(multiplyIsActive) {
-        inputElement.value = parseInt(inputArray[0]) * parseInt(inputArray[1]);
+        inputElement.value = parseFloat(inputArray[0]) * parseFloat(inputArray[1]);
     }
     if(divideIsActive) {
-        inputElement.value = parseInt(inputArray[0]) / parseInt(inputArray[1]);
+        inputElement.value = parseFloat(inputArray[0]) / parseFloat(inputArray[1]);
     }
 
     clearCalculator();
